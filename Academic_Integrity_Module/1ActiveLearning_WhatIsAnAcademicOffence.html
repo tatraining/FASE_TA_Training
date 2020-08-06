@@ -7,7 +7,7 @@
 </p>
 <div>&nbsp;</div>
 <!--Examples-->
-<div class="border border-tb" style="border-top: 2px solid #FFD700; border-bottom: 2px solid #FFD700;padding: 10px;">
+<div class="border border-tb" style="border-top: 2px solid #008ee2; border-bottom: 2px solid #008ee2;padding: 10px;">
     <p style="font-size: 16pt; text-align:center"><img style="padding: 15px;" src="/courses/172821/files/8013595/preview" alt="student(1).svg" width="100" height="100" /><strong>The following examples are academic offences committed by students</strong><img style="padding: 15px;" src="/courses/172821/files/8013633/preview" alt="FemaleStudent.svg" width="100" height="100" /></p>
     <div>&nbsp;</div>
     <p style="text-align: center; font-size: 13pt;">"A student in MAT186 (Calculus 1) brings a Canon F-570SG scientific calculator when the course only allows Casio FX-991 od Sharp EL-520 scientific calculators."<br />
@@ -36,21 +36,21 @@
 
 <!--Grouping activity-->
 <div style="text-align: center;">
-    <div class="Button element_toggler" style="border: 2px solid #002a5c; color: #002a5c;" aria-controls="activity; check;"><strong>Begin Activity</strong></div>
+    <div class="Button Button--large element_toggler" style="border: 2px solid #002a5c; color: #002a5c;" aria-controls="activity_options; activity_boxes; check1; check2; check3; check4; check5; check6; check7;"><strong>Begin Activity</strong></div>
 </div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<p style="font-size: 18pt; text-align: center">It is an academic offence for ...</p>
+<p id="activity_boxes" style="font-size: 18pt; text-align: center; display: none;">It is an academic offence for ...</p>
 <div>&nbsp;</div>
-<table style="width: 100%; border-collapse: collapse; border-style: hidden; margin-left: auto; margin-right: auto;" border="0px">
+<table id="activity_boxes" style="width: 100%; border-collapse: collapse; border-style: hidden; margin-left: auto; margin-right: auto; display: none;" border="0px">
     <tbody>
         <tr>
             <!--Column 1-->
-            <td style="width: 33%; text-align: center">
-                <div class="border border-trbl border-round" style="text-align: center; border: 2px solid #FFD700; padding: 5px; background-color: #fffec8;">
-                    <p style="text-align: center; font-size: 16pt">a student to knowingly ...</p>
-                    <p style="font-size: 12pt; color: #fffec8;">
+            <td style="width: 33.33333%; text-align: center">
+                <div class="border border-trbl border-round" style="text-align: center; border: 4px solid #008ee2; padding: 5px; background-color: #e5f2f8;">
+                    <p style="text-align: center; font-size: 16pt"><strong>a student to knowingly ...</strong></p>
+                    <p style="font-size: 12pt; color: #e5f2f8;">
                         <br />Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work
                         <br />Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere
                         <br />Evaluate an application for admission or transfer by referencing any criterion that is not academically justified
@@ -67,10 +67,10 @@
                 </div>
             </td>
             <!--Column 2-->
-            <td style="width: 34%; text-align: center">
-                <div class="border border-trbl border-round" style="text-align: center; border: 2px dashed #fc7405; padding: 5px; background-color: #fbede7;">
-                    <p style="text-align: center; font-size: 16pt">a faculty member, TA or student to knowingly ...</p>
-                    <p style="font-size: 12pt; color: #fbede7;">
+            <td style="width: 33.33333%; text-align: center">
+                <div class="border border-trbl border-round" style="text-align: center; border: 4px dashed #824ed2; padding: 5px; background-color: #e9d9f5;">
+                    <p style="text-align: center; font-size: 16pt"><strong>a faculty member, TA or student to knowingly ...</strong></p>
+                    <p style="font-size: 12pt; color: #e9d9f5;">
                         <br />Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work
                         <br />Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere
                         <br />Evaluate an application for admission or transfer by referencing any criterion that is not academically justified
@@ -87,9 +87,9 @@
                 </div>
             </td>
             <!--Column 3-->
-            <td style="width: 33%; text-align: center">
-                <div class="border border-trbl border-round" style="text-align: center; border: 2px dotted #ef2029; padding: 5px; background-color: #fce8e7;">
-                    <p style="text-align: center; font-size: 16pt">a faculty member or TA to knowingly ...</p>
+            <td style="width: 33.33333%; text-align: center">
+                <div class="border border-trbl border-round" style="text-align: center; border: 4px dotted #ef2029; padding: 5px; background-color: #fce8e7;">
+                    <p style="text-align: center; font-size: 16pt"><strong>a faculty member or TA to knowingly ...</strong></p>
                     <p style="font-size: 12pt; color: #fce8e7;">
                         <br />Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work
                         <br />Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere
@@ -113,61 +113,69 @@
 <!--Options-->
 <div style="text-align:center">
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px solid #FFD700; font-size: 12pt; padding: 3px; display: none;">Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px solid #008ee2; color: #000000; background-color: #e5f2f8; font-size: 12pt; padding: 3px; display: none;">Impersonate another person, or to have another person impersonate them, for any academic examination/term test/work</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Commit plagiarism</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px solid #FFD700; font-size: 12pt; padding: 3px; display: none;">Commit plagiarism</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Commit plagiarism</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px solid #008ee2; color: #000000; background-color: #e5f2f8; font-size: 12pt; padding: 3px; display: none;">Commit plagiarism</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Aid, conspire with or advise an individual to commit an offence</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dashed #fc7405; font-size: 12pt; padding: 3px; display: none;">Aid, conspire with or advise an individual to commit an offence</div>
-    </div>
-    <div>&nbsp; &nbsp;</div>
-    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Submit any academic work containing false statements or references to concocted sources</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px solid #FFD700; font-size: 12pt; padding: 3px; display: none;">Submit any academic work containing false statements or references to concocted sources</div>
-    </div>
-    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Approve of any academic offences</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dotted #ef2029; font-size: 12pt; padding: 3px; display: none;">Approve of any academic offences</div>
-    </div>
-    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px solid #FFD700; font-size: 12pt; padding: 3px; display: none;">Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Aid, conspire with or advise an individual to commit an offence</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dashed #824ed2; color: #000000; background-color: #e9d9f5; font-size: 12pt; padding: 3px; display: none;">Aid, conspire with or advise an individual to commit an offence</div>
     </div>
     <div>&nbsp; &nbsp;</div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Evaluate an application for admission or transfer by referencing any criterion that is not academically justified</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dotted #ef2029; font-size: 12pt; padding: 3px; display: none;">Evaluate an application for admission or transfer by referencing any criterion that is not academically justified</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Submit any academic work containing false statements or references to concocted sources</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px solid #008ee2; color: #000000; background-color: #e5f2f8; font-size: 12pt; padding: 3px; display: none;">Submit any academic work containing false statements or references to concocted sources</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Engage in any form of cheating, academic dishonesty or misconduct, fraud or misrepresentation in order to obtain academic credit or advantage of any kind</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dashed #fc7405; font-size: 12pt; padding: 3px; display: none;">Engage in any form of cheating, academic dishonesty or misconduct, fraud or misrepresentation in order to obtain academic credit or advantage of any kind</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Approve of any academic offences</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dotted #ef2029; color: #000000; background-color: #fce8e7; font-size: 12pt; padding: 3px; display: none;">Approve of any academic offences</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Use or possess unauthorized aid(s)/assistence in connection with any academic examination/term test/work</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px solid #FFD700; font-size: 12pt; padding: 3px; display: none;">Use or possess unauthorized aid(s)/assistence in connection with any academic examination/term test/work</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px solid #008ee2; color: #000000; background-color: #e5f2f8; font-size: 12pt; padding: 3px; display: none;">Submit to an instructor, without their knowledge and approval, any academic work for which credit been obtained or is being sought in another program of study anywhere</div>
     </div>
     <div>&nbsp; &nbsp;</div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Evaluate academic work by using any criteria that does not relate to its merit, relate to it's deadline, or relate to it's mode of submission</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dotted #ef2029; font-size: 12pt; padding: 3px; display: none;">Evaluate academic work by using any criteria that does not relate to its merit, relate to it's deadline, or relate to it's mode of submission</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Evaluate an application for admission or transfer by referencing any criterion that is not academically justified</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dotted #ef2029; color: #000000; background-color: #fce8e7; font-size: 12pt; padding: 3px; display: none;">Evaluate an application for admission or transfer by referencing any criterion that is not academically justified</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Tamper or forge any academic records or documents/evidence required by the University</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dashed #fc7405; font-size: 12pt; padding: 3px; display: none;">Tamper or forge any academic records or documents/evidence required by the University</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Engage in any form of cheating, academic dishonesty or misconduct, fraud or misrepresentation in order to obtain academic credit or advantage of any kind</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dashed #824ed2; color: #000000; background-color: #e9d9f5; font-size: 12pt; padding: 3px; display: none;">Engage in any form of cheating, academic dishonesty or misconduct, fraud or misrepresentation in order to obtain academic credit or advantage of any kind</div>
     </div>
     <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
-        <div id="activity" class="borber border-bottom" style="border-bottom: 2px solid #002a5c; font-size: 12pt; padding: 3px; display: none;">Communicate, circulate or make use of any form of tampered or forged academic records or University documents/evidence</div>
-        <div id="answers" class="borber border-bottom" style="border-bottom: 2px dashed #fc7405; font-size: 12pt; padding: 3px; display: none;">Communicate, circulate or make use of any form of tampered or forged academic records or University documents/evidence</div>
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Use or possess unauthorized aid(s)/assistence in connection with any academic examination/term test/work</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px solid #008ee2; color: #000000; background-color: #e5f2f8; font-size: 12pt; padding: 3px; display: none;">Use or possess unauthorized aid(s)/assistence in connection with any academic examination/term test/work</div>
+    </div>
+    <div>&nbsp; &nbsp;</div>
+    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Evaluate academic work by using any criteria that does not relate to its merit, relate to it's deadline, or relate to it's mode of submission</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dotted #ef2029; color: #000000; background-color: #fce8e7; font-size: 12pt; padding: 3px; display: none;">Evaluate academic work by using any criteria that does not relate to its merit, relate to it's deadline, or relate to it's mode of submission</div>
+    </div>
+    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Tamper or forge any academic records or documents/evidence required by the University</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dashed #824ed2; color: #000000; background-color: #e9d9f5; font-size: 12pt; padding: 3px; display: none;">Tamper or forge any academic records or documents/evidence required by the University</div>
+    </div>
+    <div class="enhanceable_content draggable Button Button--primary" style="width: 29%;">
+        <div id="activity_options" class="borber border-trbl border-round" style="border: 1px solid #002a5c; font-size: 12pt; padding: 5px; display: none;">Communicate, circulate or make use of any form of tampered or forged academic records or University documents/evidence</div>
+        <div id="answers" class="borber border-trbl border-round" style="border: 1px dashed #824ed2; color: #000000; background-color: #e9d9f5; font-size: 12pt; padding: 3px; display: none;">Communicate, circulate or make use of any form of tampered or forged academic records or University documents/evidence</div>
     </div>
 </div>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <!--Reveal answers-->
-<p id="check" style="font-size: 14pt; display: none;">When you think that you have properly categorized the offences, click <a class="border border-trbl border-round Button Button--warning Button--small element_toggler" style="border: 2px solid #fc5e13; font-size: 14pt;" aria-controls="activity; nextpart;">1</a> then <a class="border border-trbl border-round Button Button--warning Button--small element_toggler" style="border: 2px solid #fc5e13; font-size: 14pt;" aria-controls="answers; continue;">2</a> to check your work.</p>
+<p style="font-size: 14pt;">
+    <span id="check1" style="display: none">When you think that you have properly categorized the offences, click </span>
+    <span id="check2" style="display: none"><a class="border border-trbl border-round Button Button--warning Button--small element_toggler" style="border: 2px solid #fc5e13; font-size: 14pt;" aria-controls="activity_options">1</a></span>
+    <span id="check3" style="display: none"> then </span>
+    <span id="check4" style="display: none"><a class="border border-trbl border-round Button Button--warning Button--small element_toggler" style="border: 2px solid #fc5e13; font-size: 14pt;" aria-controls="check2; check3; check4; check5;">2</a></span>
+    <span id="check5" style="display: none"> then </span>
+    <span id="check6" style="display: none"><a class="border border-trbl border-round Button Button--warning Button--small element_toggler" style="border: 2px solid #fc5e13; font-size: 14pt;" aria-controls="answers; continue;">3</a></span>
+    <span id="check7" style="display: none"> to check your work.</span>
+</p>
 <div id="continue" style="display: none; text-align: center; font-size: 12pt;">
     <div>&nbsp;</div>
     <a class="border border-trbl border-round Button Button--large" style="border: 2px solid #00cc00" href="https://q.utoronto.ca/courses/172821/pages/taing-and-conflict-of-interest"><strong>Continue ...</strong></a>
